@@ -1,0 +1,17 @@
+:root{
+  /* identidade */
+  --color-primary: #002F52;
+  --color-accent: #EBB800;
+
+  /* texto */
+  --color-text: #fff;
+  --color-text-muted: #6b7280;
+
+  /* estrutura */
+  --color-background: #ffffff;
+  --color-surface: #f2f2f2;
+
+  /* tons */
+
+  --color-black: #000;
+}
