@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -39,8 +41,36 @@
             <p class="banner__p">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
         </section>
+        <section class="slider">
+            <h2 class="slider__title">ÚLTIMOS LANÇAMENTOS</h2>
+            <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt=""></div>
+            </div>            
+        </section>
     </main>
     <footer></footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            autoplay: {
+               delay: 3000,
+            },  
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },            
+                        
+        });
+    </script>
 </body>
 </html>
