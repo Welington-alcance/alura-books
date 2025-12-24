@@ -39,7 +39,7 @@
         <section class="banner">
             <h2 class="banner__title">Já sabe por onde começar?</h2>
             <p class="banner__p">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-            <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
+            <input type="search" id="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
         </section>
         <section class="slider">
             <h2 class="slider__title">ÚLTIMOS LANÇAMENTOS</h2>
@@ -51,6 +51,8 @@
                 <div class="swiper-slide"><img src="img/Javascript.svg" alt=""></div>
                 <div class="swiper-slide"><img src="img/Portugol.svg" alt=""></div>
                 <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/Tuning.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/Arquitetura.png" alt=""></div>
             </div>            
         </section>
         <section class="card">
@@ -68,15 +70,66 @@
                     <a href="#" class="card__visual--btn">Saiba mais</a>
             </div>
         </section>
+        <section class="slider">
+            <h2 class="slider__title">MAIS VENDIDOS</h2>
+            <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Nodejs.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/ReactNative.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/UX.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/Construct2.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/Gestão2.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/Liderança.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/Gestão.png" alt=""></div>
+            </div>            
+        </section>
+        <section class="card">
+            <div class="card__text">
+                <img src="img/Estrelinhas.svg" alt="" class="card__text--estrela">
+                <p class="card__text--title">Autora do Mês</p>
+                <p class="card__text--subtitle">Juliana Agarikov</p>
+                <p class="card__text--p">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                <div class="card__icon">
+                    <a href="#" class="card__icon--itens"><img src="img/Favoritos.svg" alt=""></a>
+                    <a href="#" class="card__icon--itens"><img src="img/Compras.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="card__visual">
+                    <a href="#" class="card__visual--img"><img src="img/Escritora.svg" alt=""></a>
+                    <a href="#" class="card__visual--btn">Saiba mais</a>
+            </div>
+        </section>
+        <section class="topicos">
+            <h2 class="topicos__title">Tópicos visitados recentemente</h2>
+            <div class="topicos__btn">
+                <a href="#" class="topicos__btn--itens">Android</a>
+                <a href="#" class="topicos__btn--itens">Marketing digital</a>
+                <a href="#" class="topicos__btn--itens">Agile</a>
+                <a href="#" class="topicos__btn--itens">Startups</a>
+                <a href="#" class="topicos__btn--itens">HTML & CSS</a>
+                <a href="#" class="topicos__btn--itens">Python</a>
+                <a href="#" class="topicos__btn--itens">OO</a>
+                <a href="#" class="topicos__btn--itens">Java</a>
+            </div>
 
+        </section>
+        <section class="email">
+            <h3 class="email__title">Fique por dentro das novidades!</h3>
+            <p class="email__p">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input type="email" id="email" class="email__campo" placeholder="Cadastre seu e-mail">
+        </section>
     </main>
-    <footer></footer>
-    
+    <footer class="footer">
+        <h4 class="footer__title">Grupo Alura</h4>
+    </footer>
+        
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
         const swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 10,
             autoplay: {
                delay: 3000,
@@ -87,6 +140,17 @@
             },            
                         
         });
+     
+        const emailInput = document.getElementById('email');
+        const searchInput = document.getElementById('search');
+
+        emailInput.addEventListener('blur', () => {
+            emailInput.value = '';
+        });
+
+        searchInput.addEventListener('blur', () => {
+            searchInput.value = '';
+        })
     </script>
 </body>
 </html>

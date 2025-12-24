@@ -14,7 +14,9 @@
   /* estrutura */
   --color-background: #ffffff;
   --color-background-secondary: #EBECEE;
+  --color-bg-footer: #F9F9F9;
   --color-surface: #f2f2f2;
+  --color-bg-degrade: linear-gradient(145deg, #002F52 55%, #326589);
 
   /* tons */
 
@@ -24,6 +26,7 @@
     /* degrades */
 
   --color-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --color-line: rgb(0 0 0 / 50%);
 
     /* sombras */
 
