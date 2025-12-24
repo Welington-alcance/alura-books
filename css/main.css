@@ -193,6 +193,7 @@
 }
 
 .email__campo::placeholder{
+    font-family: var(--font-primary);
     color: var(--color-primary);
     font-size: 1.6rem;
 }
