@@ -49,7 +49,6 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 1.7rem;
     padding: 1.6rem;
     margin: 1.5rem;
     border-radius: 1rem;
@@ -62,7 +61,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 0.9rem;
 }
 
 .card__text--estrela{

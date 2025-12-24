@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
 />
@@ -14,12 +15,12 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container gap-md">
             <input type="checkbox" id="menu" class="continer__menu">
             <label for="menu">
                 <span class="header__menu"></span>
             </label>
-            <nav class="list__menu">
+            <nav class="list__menu gap-md">
                 <h3 class="list__menu--title">Categoria</h3>
                 <a href="#" class="list__menu--itens">Programação</a>
                 <a href="#" class="list__menu--itens">Front-end</a>
@@ -29,7 +30,7 @@
             </nav>
             <a href="#"><img src="img/Logo.svg" alt="Logo"></a>
         </div>
-        <div class="header__container">
+        <div class="header__container gap-md">
             <a href="#"><img src="img/Favoritos.svg" alt="Favoritos"></a>
             <a href="#"><img src="img/Compras.svg" alt="Sacola de compras"></a>
             <a href="#"><img src="img/Usuario.svg" alt="Login"></a>
@@ -55,8 +56,8 @@
                 <div class="swiper-slide"><img src="img/Arquitetura.png" alt=""></div>
             </div>            
         </section>
-        <section class="card">
-            <div class="card__text">
+        <section class="card gap-md">
+            <div class="card__text gap-sm">
                 <p class="card__text--title">Talvez você também se interesse por...</p>
                 <p class="card__text--subtitle">Angular 11 e Firebase</p>
                 <p class="card__text--p">Construindo uma aplicação integrada com a plataforma do Google.</p>
@@ -85,8 +86,8 @@
                 <div class="swiper-slide"><img src="img/Gestão.png" alt=""></div>
             </div>            
         </section>
-        <section class="card">
-            <div class="card__text">
+        <section class="card gap-md">
+            <div class="card__text gap-sm">
                 <img src="img/Estrelinhas.svg" alt="" class="card__text--estrela">
                 <p class="card__text--title">Autora do Mês</p>
                 <p class="card__text--subtitle">Juliana Agarikov</p>
@@ -124,7 +125,7 @@
     <footer class="footer">
         <h4 class="footer__title">Grupo Alura</h4>
     </footer>
-        
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
