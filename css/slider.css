@@ -1,3 +1,7 @@
+.slider{
+    background-color: var(--color-background-secondary);
+}
+
 .slider__title{
     background-color: var(--color-background);
     font-family: var(--font-primary);
@@ -12,7 +16,7 @@
 
 .swiper-pagination{
     position: initial;
-    padding: 0 0 2rem 0;
+    padding: 0.5rem 0 2rem 0;
 }
 
 .swiper-slide img{

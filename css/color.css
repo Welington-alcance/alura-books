@@ -7,13 +7,25 @@
   --color-text: #fff;
   --color-text-muted: #6b7280;
 
+  /* button */
+
+  --color-bg-btn: #EB9B00;
+
   /* estrutura */
   --color-background: #ffffff;
+  --color-background-secondary: #EBECEE;
   --color-surface: #f2f2f2;
 
   /* tons */
 
   --color-black: #000;
+  --color-white: #fff;
+
+    /* degrades */
 
   --color-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+
+    /* sombras */
+
+  --color-shadow: rgb(0 0 0 / 25%);
 }
