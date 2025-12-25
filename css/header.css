@@ -64,4 +64,83 @@
     background-image: url(../img/Menu\ Aberto.svg);
 }*/
 
+.header__title, .header__nav, #menu-tablet, .list__menu-tablet{
+    display: none;
+}
 
+@media screen and (min-width: 1024px){
+    .header{
+        padding: 1.6rem 8rem;
+    }
+    .header__menu{
+        display: none;
+    }
+    .header__title{
+        display: block;
+        font-family: var(--font-secondary);
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .header__title--strong{
+        font-weight: bolder;
+    }
+
+    .header__nav{
+        display: flex;
+        gap: 2.3rem;
+        text-transform: uppercase;
+        font-family: var(--font-primary);
+        font-size: 1.6rem;
+        align-items: center;
+    }
+    
+    .header__nav--menu{
+        padding: 1rem;
+    }
+
+    .header__nav--itens{
+        color: var(--color-black);
+    }
+
+    .header__icons{
+        gap: 6.1rem;
+    }
+
+    .hedaer__favoritos{
+        display: none;
+    }
+
+    .list__menu-tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 100%;
+        left: 35.4rem;
+        width: 20vw;
+        background-color: var(--color-background);
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+
+        transform: translateY(-200%);
+        transition: transform 0.5s ease-in-out; 
+    }
+
+    #menu-tablet:checked ~ .list__menu-tablet{
+        transform: translateY(0);
+
+    }
+
+    .list__menu-tablet--itens{
+        font-size: 1.6rem;
+        color: var(--color-primary);
+        text-transform: uppercase;
+        padding: 2.4rem 3rem 1.6rem 2.4rem;
+    }
+
+    .list__menu-tablet--itens:focus{
+        background: var(--color-bg-degrade);
+        color: var(--color-white);
+    }
+}

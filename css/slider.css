@@ -16,11 +16,23 @@
 
 .swiper-pagination{
     position: initial;
-    padding: 0.5rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
 }
 
 .swiper-slide img{
     width: 100%;
     padding: 0 1rem;
+}
+
+@media screen and (min-width: 1024px){    
+    .slider__title{
+        font-size: var(--space-lg);
+        padding: 4rem 0;
+    }
+
+    .swiper{
+        width: 78%;
+        margin-bottom: 6.1rem;
+    }
 }
 

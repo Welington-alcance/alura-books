@@ -29,9 +29,27 @@
                 <a href="#" class="list__menu--itens">Design & UX</a>
             </nav>
             <a href="#"><img src="img/Logo.svg" alt="Logo"></a>
+            <h1 class="header__title"><strong class="header__title--strong">Alura</strong>Books</h1>
         </div>
-        <div class="header__container gap-md">
-            <a href="#"><img src="img/Favoritos.svg" alt="Favoritos"></a>
+        <div class="header__container">
+            <nav class="header__nav">
+                <input type="checkbox" id="menu-tablet">
+                <label for="menu-tablet">
+                    <p class="header__nav--menu">Categorias</p>
+                </label>
+                <nav class="list__menu-tablet">
+                    <a href="#" class="list__menu-tablet--itens">Programação</a>
+                    <a href="#" class="list__menu-tablet--itens">Front-end</a>
+                    <a href="#" class="list__menu-tablet--itens">Infraestrutura</a>
+                    <a href="#" class="list__menu-tablet--itens">Business</a>
+                    <a href="#" class="list__menu-tablet--itens">Design & UX</a>
+                </nav>
+                <a href="#" class="header__nav--itens">favoritos</a>
+                <a href="#" class="header__nav--itens">Minha estante</a>
+            </nav>
+        </div>
+        <div class="header__container gap-md header__icons">
+            <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="hedaer__favoritos"></a>
             <a href="#"><img src="img/Compras.svg" alt="Sacola de compras"></a>
             <a href="#"><img src="img/Usuario.svg" alt="Login"></a>
         </div>
@@ -56,21 +74,23 @@
                 <div class="swiper-slide"><img src="img/Arquitetura.png" alt=""></div>
             </div>            
         </section>
-        <section class="card gap-md">
-            <div class="card__text gap-sm">
-                <p class="card__text--title">Talvez você também se interesse por...</p>
-                <p class="card__text--subtitle">Angular 11 e Firebase</p>
-                <p class="card__text--p">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                <div class="card__icon">
-                    <a href="#" class="card__icon--itens"><img src="img/Favoritos.svg" alt=""></a>
-                    <a href="#" class="card__icon--itens"><img src="img/Compras.svg" alt=""></a>
+        <div class="card__container">
+            <section class="card gap-md">
+                <div class="card__text gap-sm">
+                    <p class="card__text--title">Talvez você também se interesse por...</p>
+                    <p class="card__text--subtitle">Angular 11 e Firebase</p>
+                    <p class="card__text--p">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <div class="card__icon">
+                        <a href="#" class="card__icon--itens"><img src="img/Favoritos.svg" alt=""></a>
+                        <a href="#" class="card__icon--itens"><img src="img/Compras.svg" alt=""></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card__visual">
-                    <a href="#" class="card__visual--img"><img src="img/Angular.svg" alt=""></a>
-                    <a href="#" class="card__visual--btn">Saiba mais</a>
-            </div>
-        </section>
+                <div class="card__visual">
+                        <a href="#" class="card__visual--img"><img src="img/Angular.svg" alt=""></a>
+                        <a href="#" class="card__visual--btn">Saiba mais</a>
+                </div>
+            </section>
+        </div>
         <section class="slider">
             <h2 class="slider__title">MAIS VENDIDOS</h2>
             <div class="swiper">
@@ -86,22 +106,24 @@
                 <div class="swiper-slide"><img src="img/Gestão.png" alt=""></div>
             </div>            
         </section>
-        <section class="card gap-md">
-            <div class="card__text gap-sm">
-                <img src="img/Estrelinhas.svg" alt="" class="card__text--estrela">
-                <p class="card__text--title">Autora do Mês</p>
-                <p class="card__text--subtitle">Juliana Agarikov</p>
-                <p class="card__text--p">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
-                <div class="card__icon">
-                    <a href="#" class="card__icon--itens"><img src="img/Favoritos.svg" alt=""></a>
-                    <a href="#" class="card__icon--itens"><img src="img/Compras.svg" alt=""></a>
+        <div class="card__container">
+            <section class="card gap-md">
+                <div class="card__text gap-sm">
+                    <img src="img/Estrelinhas.svg" alt="" class="card__text--estrela">
+                    <p class="card__text--title">Autora do Mês</p>
+                    <p class="card__text--subtitle">Juliana Agarikov</p>
+                    <p class="card__text--p">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                    <div class="card__icon">
+                        <a href="#" class="card__icon--itens"><img src="img/Favoritos.svg" alt=""></a>
+                        <a href="#" class="card__icon--itens"><img src="img/Compras.svg" alt=""></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card__visual">
-                    <a href="#" class="card__visual--img"><img src="img/Escritora.svg" alt=""></a>
-                    <a href="#" class="card__visual--btn">Saiba mais</a>
-            </div>
-        </section>
+                <div class="card__visual">
+                        <a href="#" class="card__visual--img"><img src="img/Escritora.svg" alt=""></a>
+                        <a href="#" class="card__visual--btn">Saiba mais</a>
+                </div>
+            </section>
+        </div>
         <section class="topicos">
             <h2 class="topicos__title">Tópicos visitados recentemente</h2>
             <div class="topicos__btn">
@@ -116,25 +138,67 @@
             </div>
 
         </section>
-        <section class="email">
-            <h3 class="email__title">Fique por dentro das novidades!</h3>
-            <p class="email__p">Atualizações de e-books, novos livros, promoções e outros.</p>
-            <input type="email" id="email" class="email__campo" placeholder="Cadastre seu e-mail">
-        </section>
+        <div class="email__container">
+            <section class="email">
+                <h3 class="email__title">Fique por dentro das novidades!</h3>
+                <p class="email__p">Atualizações de e-books, novos livros, promoções e outros.</p>
+                <input type="email" id="email" class="email__campo" placeholder="Cadastre seu e-mail">
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <h4 class="footer__title">Grupo Alura</h4>
+        <div class="footer-tablet">
+            <h4 class="footer-tablet--title">Grupo Alura</h4>
+            <nav class="footer-tablet__menu">
+                <div class="footer-tablet__menu--column">
+                    <h4 class="footer-tablet__menu--column-title">Educação</h4>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/Caelum.svg" alt="">Caelum</a>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/CasaDoCodigo.svg" alt="">Casa do Código</a>                
+                </div>
+                <div class="footer-tablet__menu--column">
+                    <h4 class="footer-tablet__menu--column-title">Educação Online</h4>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/Alura.svg" alt="">Alura</a>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/AluraEmpresas.svg" alt="">Alura Para Empresas</a>    
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/AluraLATAM.svg" alt="">Alura LATAM</a>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/AluraStart.svg" alt="">Alura Start</a>  <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/MusicDot.svg" alt="">MusicDot</a>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/AluraLingua.svg" alt="">Alura Língua</a> 
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/PM3.svg" alt="">PM3</a>              
+                </div>
+                <div class="footer-tablet__menu--column">
+                    <h4 class="footer-tablet__menu--column-title">Comunidade</h4>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/HipstersTech.svg" alt="">Hipsters ponto Tech</a>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/ScubaDev.svg" alt="">Scuba Dev</a>    
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/LayersTech.svg" alt="">Layers ponto Tech</a>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/LikeABoss.svg" alt="">Like a Boss</a>  <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/CarreiraSemFronteira.svg" alt="">Carreira sem Fronteira</a>
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/HipstersJobs.svg" alt="">Hipsters ponto Jobs</a> 
+                    <a href="index.html" class="footer-tablet__menu--column-itens"><img src="img/GUJ.svg" alt="">GUJ</a>              
+                </div>
+            </nav>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
         const swiper = new Swiper('.swiper', {
+            
             slidesPerView: 2,
             spaceBetween: 10,
+
+            breakpoints:{
+                428:{
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                1024:{
+                    slidesPerView: 3,
+                    spaceBetween: 74,
+                }
+            },
             autoplay: {
                delay: 1500,
-            },  
+            },              
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',

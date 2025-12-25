@@ -42,6 +42,31 @@
     opacity: 0;
 }
 
+@media screen and (min-width: 1024px){
+
+    /* MAIN > Banner */
+
+    .banner{
+        padding: 8.4rem 0;
+    }
+
+    .banner__title{
+        font-size: 3.6rem;
+    }
+
+    .banner__search{
+        width: 46%;
+        height: 5.6rem;
+        border: 0.1rem solid var(--color-white);
+        background-position: 9.8rem center;
+    }
+
+    .banner__search:focus{
+        background-position: 2rem center;
+    }
+
+}
+
 /*Section card>*/
 
 
@@ -119,6 +144,44 @@
     color: var(--color-white);
 }
 
+@media screen and (min-width: 1024px){
+    .card__container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4.8rem;
+    }
+    .card{
+        width: 57.4%;
+        padding: 1.6rem 4rem;
+    }
+
+    .card__text{
+        gap: var(--space-xl);
+        width: 50%;
+    }
+    .card__text--title{
+        font-size: 2rem;
+    }
+
+    .card__text--subtitle{
+        font-size: 2.4rem;
+    }
+
+    .card__text--p{
+        font-size: 1.8rem;
+    }
+
+    .card__text--estrela{
+        width: 13.1rem;
+        height: 2.5rem;
+    }
+
+    .card__visual{
+        height: 100%;
+        justify-content: center;
+    }
+}
+
 /*Section > Topicos*/
 
 .topicos{
@@ -150,6 +213,23 @@
     font-weight: bold;
 }
 
+@media screen and (min-width: 1024px){
+    .topicos{
+        padding-bottom: 3rem;
+    }
+    .topicos__title{
+        font-size: 2.4rem;
+    }
+    .topicos__btn{
+        padding: 0 10rem;
+        gap: 2.4rem;
+    }
+    .topicos__btn--itens{
+        font-size: 2.4rem;
+    }
+
+}
+
 /*Section > Email*/
 
 .email{
@@ -157,6 +237,7 @@
     padding: 2.4rem 2.3rem 2.3rem 3rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .email__title{
@@ -204,3 +285,29 @@
     text-align: center;
 }
 
+@media screen and (min-width: 1024px){
+    .email__container{
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-background);
+    }
+    
+    .email{
+        width: 70.8%;
+        height: 15.2rem;
+    }
+
+    .email__title, .email__p{
+        width: 50%;
+    }
+    
+    .email__title{
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+
+    .email__campo{
+        width: 40%;
+        align-self: self-end;
+    }
+}
