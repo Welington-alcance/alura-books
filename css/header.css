@@ -64,7 +64,7 @@
     background-image: url(../img/Menu\ Aberto.svg);
 }*/
 
-.header__title, .header__nav, #menu-tablet, .list__menu-tablet{
+.header__title, .header__nav, #menu-tablet, .list__menu-tablet, .header__container--p{
     display: none;
 }
 
@@ -143,4 +143,35 @@
         background: var(--color-bg-degrade);
         color: var(--color-white);
     }
+
+    .header__container--p{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+
+    .header{
+        justify-content: flex-start;
+        gap: 6.7rem;
+        height: 4rem;
+    }
+
+    .header__container:last-child{
+        margin-left: auto;
+    }
+
+    
+    .header__container--menu{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+    }
+    .header__container--p{
+        display: block;
+        font-size: 2rem;
+        color: var(--color-black);
+    }
+
 }

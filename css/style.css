@@ -2,6 +2,7 @@
 @import url(main.css);
 @import url(slider.css);
 @import url(footer.css);
+@import url(components.css);
 
 body{
     font-family: var(--font-primary);
